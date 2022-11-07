@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // bài 1:
+    // myColor =["Red","Green","White","Black"];
+    // console.log(myColor.join());
+
+/*    bài 2:
+    var num=window.prompt();
+    var result = [num[0]];
+    for(let i=1; i<num.length; i++)
+    {
+        if((num[i-1]%2 === 0)&&(num[i]%2 === 0))
+        {
+            result.push('-', num[i]);
+        }
+        else
+        {
+            result.push(num[i]);
+        }
+    }
+    console.log(result.join(''));*/
+
+    // bài 3:
+    var str = prompt();
+    const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    const result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.includes(str[x]))
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.includes(str[x]))
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+</html>

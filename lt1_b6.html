@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = Array();
+    var count=0;
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("nhập element thứ " + i);
+    }
+    let V = +prompt("nhập V cần tìm:");
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == V) {
+            count=1;
+            break;
+        }
+    }
+    if(count==0){
+        document.write("V is not in the array");
+    }else {
+        document.write("V is in the array");
+
+    }
+
+
+
+</script>
+</html>

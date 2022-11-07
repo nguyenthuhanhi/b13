@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+ let arr = Array();
+ var dem=0;
+ let amount=+prompt("nhập sl phần tử của mảng:");
+ for (let i = 0; i <amount ; i++) {
+     arr[i]=+prompt("nhập element thứ "+i);
+     if(arr[i]<0){
+         dem++;
+     }
+ }
+ document.write("có "+dem+" số nguyên âm trong mảng.");
+</script>
+</html>

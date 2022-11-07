@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<input type="button" value="translator" onclick="translator()">
+<script>
+    function translator() {
+        english = ["cat", "pig", "dog", "chicken", "duck", "elephants"];
+        vietnamese = ["mèo", "heo", "chó", "gà", "vịt", "voi"];
+        let nhap = document.getElementById("nhap").value;
+
+        if (english.indexOf(nhap) !== -1) {
+            alert(vietnamese[english.indexOf(nhap)]);
+
+        } else {
+            alert("k có trong từ điển");
+
+        }
+    }
+</script>
+</body>
+</html>

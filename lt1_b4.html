@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("nhập số lượng element: ");
+    let a = new Array();
+
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("Element thứ " + i + ":");
+    }
+    for (let i = 0; i <a.length ; i++) {
+        var first = 0;
+        var last = a.length - 1;
+        while (first < last) {
+            let b = a[first];
+            a[first] = a[last];
+            a[last] = b;
+            first++;
+            last--;
+        }
+    }
+    document.write(a);
+</script>
+</html>
